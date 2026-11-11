@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy | Pete’s Gmail Task Importer</title>
+  <style>
+    body { margin: 0; background: #f5f7fa; color: #192b3a; font: 18px/1.65 system-ui, sans-serif; }
+    main { max-width: 780px; margin: 40px auto; padding: 32px; }
+    h1 { font-size: 2.5rem; line-height: 1.15; }
+    h2 { margin-top: 2em; font-size: 1.35rem; }
+    a { color: #126356; }
+  </style>
+</head>
+<body>
+  <main>
+    <nav><a href="./">App homepage</a></nav>
+    <h1>Privacy policy</h1>
+    <p>This policy describes how Pete’s Gmail Task Importer, a personal tool maintained by Pete Macke, handles Google user data.</p>
+    <h2>Gmail data and purpose</h2>
+    <p>The importer uses Google OAuth to access the owner’s authorized Gmail accounts. It uses Gmail labels to find messages marked <strong>.IncompTask</strong>. It may read selected messages’ subjects, bodies, dates, and identifiers to create tasks, link to the source email, and avoid duplicate imports. After a successful import, it removes the processing label from the source message.</p>
+    <h2>Where data goes</h2>
+    <p>The importer sends the resulting task details, which may include information from the selected email and a link to the original message, to the owner’s connected Toodledo account. The public GitHub Pages site hosts only app information. Gmail data is used to provide the import feature and is not sold, used for advertising, or used to train general-purpose AI models.</p>
+    <h2>Storage, retention, and deletion</h2>
+    <p>The importer is designed to run on the owner’s computer and keep OAuth credentials in secure local storage. Local import records may retain message identifiers to prevent duplicates. To stop future imports, stop the local schedule and revoke access in <a href="https://myaccount.google.com/connections">Google Account connections</a>. You can remove local tokens and import records from the computer and delete imported tasks separately in Toodledo. Original messages remain subject to Gmail’s retention and deletion controls.</p>
+    <h2>Google API policy</h2>
+    <p>The importer’s use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    <h2>Contact</h2>
+    <p>Use the support contact shown on the Google consent screen for privacy questions.</p>
+  </main>
+</body>
+</html>
